@@ -79,7 +79,7 @@ export default {
 	},
 	methods: {
 		onSubmit () {
-			axios.post(	`${process.env.GRIDSOME_API_URL}/${concacts}`, this.information).then(res => {
+			axios.post(	`${process.env.GRIDSOME_API_URL}/concacts`, this.information).then(res => {
 				console.log(res.data);
 			}).catch(err => {
 				console.log(err);
