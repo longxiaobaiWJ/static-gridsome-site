@@ -171,3 +171,17 @@ export default function (Vue, { router, head, isClient }) {
 }
 ```
 
+
+
+### 3.通过vercel发布上线
+
+https://vercel.com/
+
+#### 1.根据内容自动构建发布
+
+1. 通过[git-integration](https://vercel.com/longxiaobai/static-gridsome-site/settings/git-integration)设置Deploy Hooks，复制生成网址；
+2. 在strapi项目-设置-Webhooks，添加新的 webhook；
+
+#### 2. 协议不匹配
+
+https协议与http协议不匹配，发布上线需注意；
